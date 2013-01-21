@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_path = 'lib'
 
-  s.add_runtime_dependency(%q<redis>, [">= 2.0.1"])
+  #s.add_runtime_dependency(%q<redis>, [">= 2.0.1"])
   s.add_runtime_dependency(%q<mongo-resque>, [">= 1.20.0"])
   s.add_runtime_dependency(%q<rufus-scheduler>, [">= 0"])
 end
